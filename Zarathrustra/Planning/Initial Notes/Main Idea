@@ -1,0 +1,35 @@
+Anomlous Based application prevention system (Needs rewording)
+
+Main Concept:
+
+Analyses the systemcalls,files and over-all aims of a programming (machine learning) to anaylse what the system's normal activity fo				
+
+============================================
+Time is a major concept
+
+
+Three different modules:
+
+1 → gatherer
+
+2 → processor
+
+3 → application wrapper 
+
+
+
+
+
+Issues:
+
+
+Adversarial perturbation
+
+
+dodgy with batch attacks
+
+
+
+Pass data using pipes, plus potentially can use memory streams in combination with watch?
+
+

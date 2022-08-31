@@ -1,0 +1,43 @@
+Proc Process Paramaters that should be considered:
+
+Introduction to Proc:
+Proc is psuedo virtual filesystem that contains process information regarding run-time system information. Similar to that of windows sysinternals, proc contains process information that will be used by Zarathrustra to cteate training data regarding an application (Assuming that it's being run in a safe environment).
+Proc will most likely be used in the c wrapper function to identify and gather the different system variables that a application shows.
+
+The list of the different process variables identifable by proc are the following:
+
+Memory used 
+(Virtual memory could make this into a slight issue)
+UID 
+(Potentially keep this as a time kept in higher evalation, such as anything higher than 2% of runtime in elevated privleges could be weighted heigher)
+Command-line arguments 
+(If the system suddenly takes command-lines when it hasn't previously)
+environment variables 
+(values of the environmental variables)
+The executable name or location 
+(shouldn't change)
+File descripitors 
+(Should keep a list of how many and put weighting on them, for example opening a random file in /home/ should raise less alarms than /etc/shadow (inbuilt bias))
+Memory maps 
+(If it's trying to map to a libc or system shell for example it should be denied)
+Link to the root directory of this process
+(if changes sus)
+Memory status information 
+(Look more into this one)
+Process Status Information 
+(Process Status in a human readable form)
+Process Interrupts
+(for example, it random takes keyboard input)
+APM
+Advanced power management Info (May be hard to use)
+Bus lines:
+Bus specifc info
+Kernel Command line:
+Research this further
+
+
+Niceness is very easy to add
+
+
+
+Proc will be invaluable
